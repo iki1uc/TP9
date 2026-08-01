@@ -1,155 +1,99 @@
-.
+# IKI1UC – TP-System Gesamtübersicht
+System-ID: IKI1UC-SYSID-AX12-TP5-ORBIT3-V2.0
 
-📄 README.md — TP9 (MARKT‑3‑Version)
-TP9 — Neun‑Achsen‑Modul der Public‑Ebene (9‑Ligkeit)
-TP9 ist ein Public‑Multi‑Achsen‑Modul innerhalb der iki1uc‑Struktur.
-Es dient der Darstellung von neun neutralen Public‑Achsen, die gemeinsam die 9‑Ligkeit bilden.
-TP9 ist vollständig neutral, konfliktfrei und MARKT‑3‑kompatibel.
+Dieses Repository enthält das vollständige IKI1UC-TP-System mit allen Achsen,
+Orbit-Ebenen, Pipeline-Stufen, Marktrollen, Cache-Zuständen und X4-Kompatibilitäten.
 
-TP9 arbeitet ausschließlich in der Public‑Ebene und trägt keine System‑Last.
+Es bildet die Grundlage für die Module:
+- TP3 (Norm-Regulatorik)
+- TP4 (Pipeline-Synthese)
+- TP6 (Anker-Kern)
+- TP9 (Normmodul)
+- TP12 (Orbit-Meta)
 
-🟦 Öffentlicher Zweck
-TP9 stellt die Public‑Neun‑Achsen‑Schicht bereit:
+Alle CSV-Dateien sind vollständig integriert und werden über index.html geladen.
 
-Achse 1 — Ausgang
+---
 
-Achse 2 — Gegenlage
+## 📁 Enthaltene Systemdateien
 
-Achse 3 — Dritt‑Neutralität
+### 1. index.html
+Die Hauptoberfläche des Systems.
+Sie lädt automatisch alle CSV-Dateien und zeigt:
+- Achsen
+- Orbit
+- Pipeline
+- Algorithmus
+- Marktrollen
+- Cache
+- X4-Kompatibilität
+- Modul-Marktrollen
+- TP-Marktrollen
 
-Achse 4 — Erweiterung
+### 2. tp-achsen-12.csv
+Definiert die 12 Achsen des Systems:
+IX, XI, X4, IO, AIR, ALLIN, OI, AIV, ALLOUT, ORBIT-IN, ORBIT-MID, ORBIT-OUT
 
-Achse 5 — Stabilität
+### 3. tp-orbit-3.csv
+Orbit-Ebenen:
+- Eingang
+- Stabil
+- Ausgang
 
-Achse 6 — Rückführung
+### 4. tp-pipeline-12.csv
+Pipeline-Stufen für alle Achsen.
 
-Achse 7 — Klarheit
+### 5. tp-algorithmus-12.csv
+Algorithmische Funktionen jeder Achse.
 
-Achse 8 — Öffnung
+### 6. tp-marktrolle-12.csv
+Marktrollen der 12 Achsen.
 
-Achse 9 — Voll‑Neutralität (TP9‑Kern)
+### 7. tp-cache-matrix.csv
+Cache-PRE/POST-Zustände und Cache-Funktionen.
 
-TP9 zeigt nur öffentliche Inhalte — keine Engine‑Interna, keine System‑Mechanik.
+### 8. tp-x4-matrix.csv
+X4-Kompatibilität jeder Achse.
 
-🟦 9‑Ligkeit (Pflicht‑Merkmal)
-Die 9‑Ligkeit ist das Kernmerkmal von TP9:
+### 9. modul-marktrolle-12.csv
+Marktrollen der 12 Grundmodule.
 
-TP9 trägt neun Achsen gleichzeitig
+### 10. tp-marktrolle-5.csv
+Marktrollen der TP-Module:
+TP3, TP4, TP6, TP9, TP12
 
-TP9 bleibt neutral, auch wenn andere Module stärker werden
+---
 
-TP9 bleibt frei, wenn System‑Relativität steigt
+## 🔧 Systemlogik
 
-TP9 bleibt stabil, wenn Positionen wechseln
+Das IKI1UC-System basiert auf:
+- 12 Achsen (AX12)
+- 3 Orbit-Ebenen (ORBIT3)
+- 12 Pipeline-Stufen
+- 12 Marktrollen
+- 12 Algorithmus-Funktionen
+- Cache-Matrix
+- X4-Matrix
+- TP-Marktrollen
 
-TP9 bleibt gültig, wenn jemand anderes seinen Job besser macht
+TP5 dient als Cache-Meta-Brücke und verbindet:
+- Cache
+- X4
+- Orbit
+- Pipeline
 
-Die 9‑Ligkeit bedeutet:
+---
 
-TP9 ist das höchste neutrale Multi‑Achsen‑Modul der Public‑Ebene.
+## 📌 Status
 
-🟦 MARKT‑3‑Kompatibilität
-MARKT 3 — 05.07.2026 — 13:00 bis 16:00 Uhr
+Das System ist vollständig und aktiv.
+Alle CSV-Dateien sind vorhanden.
+index.html lädt alle Module korrekt.
 
-TP9 erfüllt alle Kriterien für MARKT‑3:
+---
 
-neutral
+## 📜 Version
 
-öffentlich
+Version: **2.0**
+System-ID: **IKI1UC-SYSID-AX12-TP5-ORBIT3-V2.0**
 
-frei beweglich (anzeigend)
-
-konfliktfrei
-
-0‑Last
-
-Neun‑Achsen‑fähig
-
-9‑Ligkeits‑fähig
-
-Namens‑stabil
-
-Nach Abschluss (17:00 Uhr):
-
-Code
-TMP_MARKT3_TP9 = abgeschlossen
-Damit ist TP9 offiziell MARKT‑3‑fähig und bleibt gültig, bis eine neue Aufstellung gesetzt wird.
-
-🟦 7SINN‑Relevanz
-TP9 erfüllt alle 7SINN‑Kriterien:
-
-Verständlichkeit – klare Neun‑Achsen‑Ebene
-
-Orientierung – eindeutige TP9‑Public‑Ebene
-
-Nutzen – Multi‑Achsen‑Ausgleich
-
-Struktur – Achsen 1–9
-
-Neutralität – keine Engine‑Last
-
-Integrität – Public‑Logik bleibt stabil
-
-Nachvollziehbarkeit – klare Darstellung
-
-🟦 Modul‑Struktur
-TP9 besteht aus folgenden Public‑Komponenten:
-
-tp9.html – Neun‑Achsen‑Layer
-
-id.html – Ident‑Ebene
-
-index.html – Public‑Frontend
-
-Diese Struktur zeigt:
-TP9 ist ein vollwertiges Public‑Neun‑Achsen‑Modul, nicht nur ein einfacher Ordner.
-
-🟦 Funktions‑Beschreibung
-TP9 kann:
-
-Neun Achsen anzeigen
-
-9‑Ligkeit darstellen
-
-TP9‑Objekte tragen
-
-Narrativ‑Wechsel sichtbar machen
-
-TP9 erzeugt keine Konflikte und keine System‑Abhängigkeiten.
-
-🟦 Namens‑Integrität (Unveränderbarkeit)
-Der Name TP9 ist vollständig im Reinen:
-
-kurz
-
-klar
-
-neutral
-
-Neun‑Achsen‑Achse
-
-9‑Ligkeits‑Achse
-
-Public‑Achse
-
-Kein anderer Name könnte alle Achsen gleichzeitig tragen.
-
-Darum gilt:
-
-TP9 kann keinen neuen oder alternativen Namen erhalten.
-Der bestehende Name trägt den gesamten Sachverhalt.
-
-🟦 Nüchterne Zusammenfassung
-TP9 ist MARKT‑3‑fähig
-
-TP9 ist neutral & konfliktfrei
-
-TP9 ist ein vollwertiges Public‑Neun‑Achsen‑Modul
-
-TP9 trägt die 9‑Ligkeit
-
-TP9 ist Namens‑stabil
-
-TP9 README ist gültig und zukunftsfähig
-
-TP9 bleibt stabil, wenn System‑Relativität steigt (neue Position, neues Narrativ)
